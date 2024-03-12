@@ -1,0 +1,37 @@
+{
+    "name": "jiny/manual",
+    "description": "livewire with popup manual",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hojinlee",
+            "email": "infohojin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0.2",
+        "livewire/livewire": "^2.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jiny\\Manual\\":"src/"
+        },
+        "files" : [
+            "src/Helpers/Helper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jiny\\Manual\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jiny\\Manual\\JinyManualServiceProvider"
+            ]
+        }
+    }
+}
